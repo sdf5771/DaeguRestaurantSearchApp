@@ -1,4 +1,4 @@
-export type locationType = {
+export type regionType = {
     code: string,
     regionName: string,
     subRegionName: string,

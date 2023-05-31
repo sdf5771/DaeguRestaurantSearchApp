@@ -1,5 +1,5 @@
-import { locationType } from "./locationType";
+import { regionType } from "./regionType";
 
 export type {
-    locationType,
+    regionType,
 }
