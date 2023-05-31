@@ -7,6 +7,9 @@ function HomeScreen({navigation}){
             <View>
                 <Text>HomeScreen</Text>
             </View>
+            <View>
+                <Text># 오늘 뭐먹지?</Text>
+            </View>
         </SafeAreaView>
     )
 }

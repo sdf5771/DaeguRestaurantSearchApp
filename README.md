@@ -5,7 +5,7 @@
 
 </aside>
 
-`@lastest-update readme post: 2023-05-30`
+`@lastest-update readme post: 2023-05-31`
 
 ---
 
@@ -87,6 +87,9 @@ Design Pattern : `Atomic Design Pattern`
 
 ```tsx
 .
+├── 📁 navigator
+│   ├── BottomTabNavigator.tsx
+│   └── RootNavigator.tsx
 ├── 📁 assets
 │   └── 📁 images
 │       └── index.ts
@@ -99,6 +102,9 @@ Design Pattern : `Atomic Design Pattern`
 │   │   └── index.ts
 │   ├── 📁 Screen
 │   │   ├── HomeScreen.tsx
+│   │   ├── NewsScreen.tsx
+│   │   ├── SearchScreen.tsx
+│   │   ├── UserInfoScreen.tsx
 │   │   └── index.ts
 │   └── 📁 Templates
 │       └── index.ts
@@ -106,24 +112,31 @@ Design Pattern : `Atomic Design Pattern`
 │   └── index.ts
 ├── 📁 queries
 │   └── index.ts
-└── 📁 states
-    └── index.ts
+├── 📁 states
+│   └── index.ts
+└── 📁 types
+    ├── index.ts
+    └── regionType.ts
 
-12 directories, 10 files
+14 directories, 17 files
 ```
 
-`📁assets`
+`📁assets` : image etc
 
-`📁components`
+`📁components` : All Type Components Directory
 
-- `📁Atoms`
-- `📁Molecules`
-- `📁Organisms`
-- `📁Templates`
-- `📁Screen`
+- `📁Atoms` : Atom Components Directory
+- `📁Molecules` : Molecule Components Directory
+- `📁Organisms` : Organism Components Directory
+- `📁Templates` : Template Components Directory
+- `📁Screen` : Screen Components Directory
 
-`📁hooks`
+`📁hooks` : React Custom Hooks
 
-`📁queries`
+`📁queries` : React Query
 
-`📁states`
+`📁states` : Recoil Atom State
+
+`📁types` : TypeScript Types
+
+`📁navigator` : Root & Bottom Tab Navigator
