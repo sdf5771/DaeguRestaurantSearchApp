@@ -1,8 +1,8 @@
 export type regionType = {
-    code: string,
-    regionName: string,
-    subRegionName: string,
-}
+	code: string;
+	regionName: string;
+	subRegionName: string;
+};
 
 /*
 [
