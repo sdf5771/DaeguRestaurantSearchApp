@@ -9,7 +9,7 @@ import { useNavigation } from '@react-navigation/native';
 function StoreRegion(){
     const navigation = useNavigation();
     const {isLoading, isError, data, error} = useQuery(['region'], getRegion);
-    console.log('data ', data);
+    
     return (
         <View style={styles.regionRoot}>
             <Text style={styles.regionHeaderText}> # 지역별로 찾아볼까요? </Text>
@@ -33,7 +33,10 @@ function StoreRegion(){
 
 const styles = StyleSheet.create({
     regionRoot: {
+        marginVertical: 10,
+        flex: 1,
         padding: 20,
+        backgroundColor: '#ffffff',
     },
     regionHeaderText: {
         marginLeft: 5,

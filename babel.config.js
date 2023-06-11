@@ -12,6 +12,13 @@ module.exports = {
         allowUndefined: true,
       },
     ],
+    [
+      'babel-plugin-root-import',
+      {
+        rootPathPrefix: '~',
+        rootPathSuffix: 'src',
+      },
+    ],
     "babel-plugin-styled-components",
   ],
 };

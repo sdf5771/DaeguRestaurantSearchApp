@@ -10,12 +10,26 @@
     "moduleResolution": "node",
     "noEmit": true,
     "strict": true,
-    "target": "esnext"
+    "target": "esnext",
+    "types": [
+      "react",
+      "react-native",
+      "styled-components",
+      "styled-components-react-native"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["*"] // resolve any `~/foo/bar` to `<baseUrl>/foo/bar`
+    }
   },
   "exclude": [
     "node_modules",
     "babel.config.js",
     "metro.config.js",
     "jest.config.js"
+  ],
+  "include": [
+    "src",
+    "declaration.d.ts"
   ]
 }

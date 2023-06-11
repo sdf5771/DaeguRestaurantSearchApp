@@ -6,9 +6,7 @@ function HomeScreen({navigation}) {
 	return (
 		<SafeAreaView style={{flex: 1}}>
 			<ScrollView style={{flex: 1}}>
-				<View style={{flex: 2}}>
-					<Text>HomeScreen</Text>
-				</View>
+				<Organisms.DailyStore />
 				<Organisms.StoreRegion />
 			</ScrollView>
 		</SafeAreaView>
