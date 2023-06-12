@@ -14,10 +14,10 @@ function DailyStore(){
     console.log('data ', data);
     return (
         <View style={styles.dailyStoreRoot}>
-            <Text style={styles.dailyStoreHeaderText}># 오늘의 추천메뉴</Text>
+            <Text style={styles.dailyStoreHeaderText}># 오늘의 추천 맛집!</Text>
             <ViewSlider 
                 renderSlides = {
-                    data ? data.map((dailyStoreData: TdailyStore, index) => {
+                    data ? data.map((dailyStoreData: TdailyStore) => {
                         return <Molecules.DailyStoreElement 
                             key={dailyStoreData.storeId}
                             storeId={dailyStoreData.storeId}
@@ -42,7 +42,7 @@ function DailyStore(){
                 height = {200}    //Height of your slider
                 slideCount = {countNum}    //How many views you are adding to slide
                 dots = {true}     // Pagination dots visibility true for visibile 
-                dotActiveColor = 'black'     //Pagination dot active color
+                dotActiveColor = '#333333'     //Pagination dot active color
                 dotInactiveColor = 'gray'    // Pagination do inactive color
                 dotsContainerStyle={styles.dotContainer}     // Container style of the pagination dots
                 autoSlide = {true}    //The views will slide automatically
@@ -76,11 +76,12 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: 'transparent',
+        height: 320,
     },
     dotContainer: {
         backgroundColor: 'transparent',
         marginVertical: 0,
-    }
-})
+    },
+});
 
 export default DailyStore;
